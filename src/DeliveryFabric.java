@@ -1,10 +1,12 @@
 public class DeliveryFabric {
-    public static CargoTransportation deliveryFabric(int type){
+    public static Transportation deliveryFabric(int type, String street){
         switch (type){
             case 1:
-                return new PrivateCargoTransportation();
+                return new PrivateTransportation(street);
             case 2:
-                return new CommericalCargoTransportation();
+                return new CommericalTransportation(street);
+            case 3:
+                return new OurTransportation(street);
             default:
                 throw new IllegalArgumentException("Неверный тип грузоперевозки");
         }
