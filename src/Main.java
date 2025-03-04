@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        DeliveryFabric fabric = new DeliveryFabric();
         Transportation transportation;
         Cargo cargo;
 

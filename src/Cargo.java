@@ -1,3 +1,3 @@
 public interface Cargo {
-    public String deliver();
+    String deliver();
 }
